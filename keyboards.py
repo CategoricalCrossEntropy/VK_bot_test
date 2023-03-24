@@ -19,5 +19,7 @@ def main_menu(id_):
     kbd.add_button("Афиша (в разработке)", VkKeyboardColor.PRIMARY)
     kbd.add_line()
     kbd.add_button("Валюта", VkKeyboardColor.PRIMARY)
+    kbd.add_line()
+    kbd.add_button("Сменить город", VkKeyboardColor.PRIMARY)
     send_message(id_, "Выбери пункт, который хочешь посмотреть",
                  keyboard=kbd)

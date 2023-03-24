@@ -75,5 +75,9 @@ for event in longpoll.listen():
         elif msg == "Афиша (в разработке)":
             main_menu(user_id)
 
+        elif msg == "Сменить город":
+            send_message(user_id, "Введи название своего города:")
+            user_cities[user_id] = "Enter_city_name"
+
         else:
             send_message(user_id, "Неизвестная команда")
